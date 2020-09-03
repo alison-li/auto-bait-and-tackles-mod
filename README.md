@@ -10,4 +10,4 @@ Particularly when hunting for treasure chests during fishing in Stardew Valley, 
 
 When the fishing rod is selected, press the `R` key on your keyboard to load bait and the first instance of a fishing tackle in your backpack. For tackles, this works best when you have the types tackles set in your inventory slots in the order that you want them to be attached to your rod in.
 
-If the bait slot in your fishing rod is empty, the mod will look for the first stack of any type of bait in your inventory and attach it to the fishing rod. If the bait slot already contains bait, the mod will search your inventory for bait stacks of the same type ("Bait" or "Wild Bait" as of v1.4.5) and add the stacks to the bait slot in the rod.
+If the bait slot in your fishing rod is empty, the mod will look for the first stack of any type of bait in your inventory and attach it to the fishing rod. If the bait slot already contains bait, the mod will search your inventory for bait stacks of the same type ("Bait" or "Wild Bait" as of v1.4.5) and add the stacks to the existing stack of bait that is already attached to the rod.
