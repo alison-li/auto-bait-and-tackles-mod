@@ -68,7 +68,7 @@ namespace AutoBaitAndTackles
                             }
                         }
                     }
-                    Game1.showGlobalMessage($"All stacks of {rod.attachments[0].Name} automatically attached");
+                    // Game1.showGlobalMessage($"All stacks of {rod.attachments[0].Name} automatically attached");
                 }
                 // Case where there is no bait attached.
                 // We simply attach the first instance of bait we see in the inventory onto the fishing rod.
@@ -80,7 +80,7 @@ namespace AutoBaitAndTackles
                         {
                             rod.attachments[0] = (Object)item;
                             Game1.player.removeItemFromInventory(item);
-                            Game1.showGlobalMessage($"{item.Name} automatically attached");
+                            // Game1.showGlobalMessage($"{item.Name} automatically attached");
                             break;
                         }
                     }
@@ -100,7 +100,7 @@ namespace AutoBaitAndTackles
                         {
                             rod.attachments[1] = (Object) item;
                             Game1.player.removeItemFromInventory(item);
-                            Game1.showGlobalMessage($"{item.Name} automatically attached");
+                            // Game1.showGlobalMessage($"{item.Name} automatically attached");
                             break;
                         }
                     }
