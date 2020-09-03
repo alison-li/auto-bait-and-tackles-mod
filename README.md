@@ -4,7 +4,7 @@ A mod for [Stardew Valley](https://www.stardewvalley.net/). If the current tool 
 
 ## Motivation
 
-Particularly when hunting for treasure chests during fishing in Stardew Valley, it can be tedious to constantly get chests of small stacks of fish bait. This mmod saves the player from the tediousness of having to go back in their inventory to attach new stacks of bait and a new tackle every time their currently attached bait and tackle wear out.
+Particularly when hunting for treasure chests during fishing in Stardew Valley, it can be tedious to constantly get chests of small stacks of fish bait. This mod saves the player from the tediousness of having to go back in their inventory to attach new stacks of bait and a new tackle every time their currently attached bait and tackle wear out.
 
 ## Instructions
 
