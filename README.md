@@ -1,6 +1,6 @@
 # Auto Bait And Tackles Mod
 
-A mod for [Stardew Valley](https://www.stardewvalley.net/). If the current tool selected by the player is a fishing rod, the player can press a keyboard button to allow the mod to automatically attach fishing bait and/or a tackle to the rod.
+A mod for [Stardew Valley](https://www.stardewvalley.net/) created using SMAPI. This mod allows you to automatically attach bait and tackles from your inventory to your fishing rod with the press of a button.
 
 ## Motivation
 
