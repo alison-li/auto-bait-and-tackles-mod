@@ -4,7 +4,7 @@ A mod for [Stardew Valley](https://www.stardewvalley.net/). If the current tool 
 
 ## Motivation
 
-The automataic bait attachment is an extra but the main motivation was regarding the fishing tackles in Stardew Valley. This saves the player from the tediousness of having to go back in their inventory to attach new a tackle every time their currently attached tackle wears out.
+The automatic bait attachment is an extra feature but the main motivation was regarding the fishing tackles in Stardew Valley. This saves the player from the tediousness of having to go back in their inventory to attach new a tackle every time their currently attached tackle wears out.
 
 ## Instructions
 
