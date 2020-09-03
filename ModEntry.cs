@@ -47,24 +47,50 @@ namespace AutoBaitAndTackles
                 IList<Item> items = Game1.player.Items;
 
                 // Check the bait slot.
-                if (rod.attachments[0] == null)
+                // Case where there is already bait attached.
+                // We stack the same type of bait onto the existing bait attached to the fishing rod.
+                if (rod.attachments[0] != null && rod.attachments[0].Stack != rod.attachments[0].maximumStackSize()
+                    && Game1.player.hasItemWithNameThatContains("Bait") != null)
                 {
                     foreach (Item item in items)
                     {
                         // Category value for bait is -21.
                         // Source: https://github.com/veywrn/StardewValley/blob/master/StardewValley/Item.cs
+                        if (item != null && item.Category == -21 && item.Name.Equals(rod.attachments[0].Name))
+                        {
+                            int stackAdd = Math.Min(rod.attachments[0].getRemainingStackSpace(), item.Stack);
+                            rod.attachments[0].Stack += stackAdd;
+                            item.Stack -= stackAdd;
+                            
+                            if (item.Stack == 0)
+                            {
+                                Game1.player.removeItemFromInventory(item);
+                            }
+                        }
+                    }
+                    Game1.showGlobalMessage($"All stacks of {rod.attachments[0].Name} automatically attached");
+                }
+                // Case where there is no bait attached.
+                // We simply attach the first instance of bait we see in the inventory onto the fishing rod.
+                else if (rod.attachments[0] == null && Game1.player.hasItemWithNameThatContains("Bait") != null)
+                {
+                    foreach (Item item in items)
+                    {
                         if (item != null && item.Category == -21)
                         {
                             rod.attachments[0] = (Object)item;
                             Game1.player.removeItemFromInventory(item);
-                            Game1.showGlobalMessage($"{item.Name} has been automatically attached");
+                            Game1.showGlobalMessage($"{item.Name} automatically attached");
                             break;
                         }
                     }
                 }
 
                 // Check the tackle slot.
-                if (rod.attachments[1] == null)
+                if (rod.attachments[1] == null && (Game1.player.hasItemWithNameThatContains("Bobber") != null
+                    || Game1.player.hasItemWithNameThatContains("Spinner") != null
+                    || Game1.player.hasItemWithNameThatContains("Hook") != null
+                    || Game1.player.hasItemWithNameThatContains("Treasure Hunter") != null))
                 {
                     foreach (Item item in items)
                     {
@@ -72,9 +98,9 @@ namespace AutoBaitAndTackles
                         // Source: https://github.com/veywrn/StardewValley/blob/master/StardewValley/Item.cs
                         if (item != null && item.Category == -22)
                         {
-                            rod.attachments[1] = (Object)item;
+                            rod.attachments[1] = (Object) item;
                             Game1.player.removeItemFromInventory(item);
-                            Game1.showGlobalMessage($"{item.Name} has been automatically attached");
+                            Game1.showGlobalMessage($"{item.Name} automatically attached");
                             break;
                         }
                     }
