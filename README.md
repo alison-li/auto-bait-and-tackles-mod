@@ -1,5 +1,7 @@
 # Auto Bait And Tackles Mod
 
+[![Generic badge](https://img.shields.io/badge/contributions-welcome-<COLOR>.svg)](https://shields.io/)
+
 A mod for [Stardew Valley](https://www.stardewvalley.net/) created using SMAPI. This mod allows you to automatically attach bait and tackles from your inventory to your fishing rod with the press of a button.
 
 ## Motivation
