@@ -6,5 +6,5 @@
   "UniqueID": "Alison-Li.AutoBaitAndTackles",
   "EntryDll": "AutoBaitAndTackles.dll",
   "MinimumApiVersion": "3.0.0",
-  "UpdateKeys": []
+  "UpdateKeys": [ "Nexus:6773" ]
 }
